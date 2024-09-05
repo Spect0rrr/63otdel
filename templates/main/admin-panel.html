@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poxui</title>
+    <link rel="stylesheet" href="admin-panel.css" >
+    <script src="js.js"></script>
+</head>
+<body>
+    <div class="header">
+        <p class="header-text">Внесение изменений</p>
+    </div>
+    <div class="main-div">
+        <div class="choice-pos">
+            <p class="choice-text">Выберете действие для внесения изменений</p>
+        </div>
+        <div>
+            <button class="add-button" onclick="GoToAddUser()"> 
+                Добавить сотрудника
+            </button>
+        </div>
+        <div>
+            <button class="otdel-plans-button" onclick="GoToOtdelPlans()"> 
+                Планы отдела
+            </button>
+        </div>
+        <div>
+            <button class="delete-button" onclick="GoToDeleteUser()"> 
+                Удалить сотрудника
+            </button>
+        </div>
+        <div>
+            <button class="user-plans-button" onclick="GoToUserPlans()"> 
+                Личные планы
+            </button>
+        </div>
+        <div>
+            <button class="back-button" onclick="StartPanel()">
+                Назад
+            </button>
+        </div>
+    </div>
+    <div class="footer">
+        <p class="footer-text">Иванов Иван Иваныч</p>
+    </div>
+</body>
+</html>

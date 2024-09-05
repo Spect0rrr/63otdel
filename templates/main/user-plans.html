@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coworker plans</title>
+    <link rel="stylesheet" href="user-plans.css" >
+    <script src="js.js"></script>
+</head>
+<body>
+    <div class="header">
+        <p class="header-text">Личные планы сотрудника</p>
+    </div>
+    <div class="main-div">
+        <div class="enter-fio-pos">
+            <p class="enter-fio">Введите изменения в личных планах сотрудника</p>
+        </div>
+        <div class="fio-label">
+            <label class="fio-text">ФИО сотрудника</label>
+            <input type="text" class="fio-input">
+        </div>
+        <div class="add-user-plan-pos">
+            <label class="add-user-plan-text">Добавление личного плана</label>
+            <input type="text" class="add-user-plan-input">
+        </div>
+        <div class="delete-user-plan-pos">
+            <label class="delete-user-plan-text">Удаление личного плана</label>
+            <input type="text" class="delete-user-plan-input">
+        </div>
+        <div>
+            <button class="continue-button" onclick="ChangeUserPlan()"> 
+                Подтвердить
+            </button>
+        </div>
+        <div>
+            <button class="back-button" onclick="AdminPanel()">
+                Назад
+            </button>
+        </div>
+    </div>
+    <div class="footer">
+        <p class="footer-text">Иванов Иван Иваныч</p>
+    </div>
+</body>
+</html>

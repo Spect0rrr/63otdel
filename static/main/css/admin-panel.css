@@ -1,0 +1,238 @@
+html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-image: url('new-fon-blue.png'), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'MyFont';
+    src: url('fonts/Alegreyascmedium.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 40vw;
+    height: 15vh;
+    border: 2px solid #5772ba;
+    box-shadow: 2px 5px 7px 5px rgba(114, 165, 223, 0.7);
+    border-radius: 5px 0 0 35px;
+    float: right;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('new-fon-blue.png');
+    filter: blur(5px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+.header-text {
+    position: relative;
+    font-family: 'MyFont', sans-serif;
+    font-size: 6vh;
+    border-right: 20%;
+    margin-left: 5%;
+    z-index: 1;
+}
+
+.main-div {
+    position: absolute;
+    display: flex;
+    width: 57vw;
+    height: 50vh;
+    border: 2px solid #5772ba;
+    box-shadow: 2px 5px 7px 5px rgba(114, 165, 223, 0.7);
+    border-radius: 35px;
+    flex-direction: column;
+    margin-left: 20%;
+    margin-top: 12.5%;
+}
+
+.main-div::before {
+    content: '';
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('new-fon-blue.png');
+    filter: blur(7px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+.choice-pos {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.choice-text {
+    font-family: 'MyFont', sans-serif;
+    font-size: 4vh;
+}
+
+.add-button {
+    position: absolute;
+    background-color: #5772ba;
+    width: 22vw;
+    height: 6vh;
+    border: none;
+    border-radius: 25px;
+    font-family: 'MyFont', sans-serif;
+    font-size: 3.5vh;
+    box-shadow: 2px 3px 5px 3px rgba(114, 165, 223, 0.7);
+    top: 30%;
+    left: 10%;
+    transition: all 0.5 ease;
+    color: white;
+    cursor: pointer;
+}
+
+.add-button:hover {
+    transform: scale(1.1);
+}
+
+.otdel-plans-button {
+    position: absolute;
+    background-color: #5772ba;
+    width: 22vw;
+    height: 6vh;
+    border: none;
+    border-radius: 25px;
+    font-family: 'MyFont', sans-serif;
+    font-size: 3.5vh;
+    box-shadow: 2px 3px 5px 3px rgba(114, 165, 223, 0.7);
+    top: 30%;
+    left: 52%;
+    transition: all 0.5 ease;
+    color: white;
+    cursor: pointer;
+}
+
+.otdel-plans-button:hover {
+    transform: scale(1.1);
+}
+
+.delete-button {
+    position: absolute;
+    background-color: #5772ba;
+    width: 22vw;
+    height: 6vh;
+    border: none;
+    border-radius: 25px;
+    font-family: 'MyFont', sans-serif;
+    font-size: 3.5vh;
+    box-shadow: 2px 3px 5px 3px rgba(114, 165, 223, 0.7);
+    top: 52%;
+    left: 10%;
+    transition: all 0.5 ease;
+    color: white;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    transform: scale(1.1);
+}
+
+.user-plans-button {
+    position: absolute;
+    background-color: #5772ba;
+    width: 22vw;
+    height: 6vh;
+    border: none;
+    border-radius: 25px;
+    font-family: 'MyFont', sans-serif;
+    font-size: 3.5vh;
+    box-shadow: 2px 3px 5px 3px rgba(114, 165, 223, 0.7);
+    top: 52%;
+    left: 52%;
+    transition: all 0.5 ease;
+    color: white;
+    cursor: pointer;
+}
+
+.user-plans-button:hover {
+    transform: scale(1.1);
+}
+
+.back-button {
+    position: absolute;
+    background-color: #5772ba;
+    width: 22vw;
+    height: 6vh;
+    border: none;
+    border-radius: 25px;
+    font-family: 'MyFont', sans-serif;
+    font-size: 3.5vh;
+    box-shadow: 2px 3px 5px 3px rgba(114, 165, 223, 0.7);
+    top: 73%;
+    left: 31%;
+    transition: all 0.5 ease;
+    color: white;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    transform: scale(1.1);
+}
+
+.footer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 40vw;
+    height: 15vh;
+    border: 2px solid #5772ba;
+    box-shadow: 2px 2px 5px 5px rgba(114, 165, 223, 0.7);
+    border-radius: 0 35px 5px 0;
+    float: left;
+    margin-top: 45%;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('new-fon-blue.png');
+    filter: blur(5px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+.footer-text {
+    position: relative;
+    font-family: 'MyFont', sans-serif;
+    font-size: 6vh;
+    border-right: 20%;
+    margin-left: 5%;
+    z-index: 1;
+    /* color: white; */
+}

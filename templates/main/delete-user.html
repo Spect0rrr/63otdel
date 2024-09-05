@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete user</title>
+    <link rel="stylesheet" href="delete-user.css" >
+    <script src="js.js"></script>
+</head>
+<body>
+    <div class="header">
+        <p class="header-text">Удаление сотрудника</p>
+    </div>
+    <div class="main-div">
+        <div class="enter-fio-pos">
+            <p class="enter-fio">Введите ФИО сотрудника</p>
+        </div>
+        <div class="fio-label">
+            <label class="fio-text">ФИО сотрудника</label>
+            <input type="text" class="fio-input">
+        </div>
+        <div>
+            <button class="continue-button" onclick="DeleteUser()"> 
+                Подтвердить
+            </button>
+        </div>
+        <div>
+            <button class="back-button" onclick="BackFromDeleting()">
+                Назад
+            </button>
+        </div>
+    </div>
+    <div class="footer">
+        <p class="footer-text">Иванов Иван Иваныч</p>
+    </div>
+    <img src="fon-clouds.png" class="just-photo">
+</body>
+</html> 

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавление нового сотрудника</title>
+    <link rel="stylesheet" href="add-new-user.css" >
+    <script src="js.js"></script>
+</head>
+<body>
+    <div class="header">
+        <p class="header-text">Добавление нового сотрудника</p>
+    </div>
+    <div class="main-div">
+        <div class="main-div-text-pos">
+            <p class="main-div-text">Ввеодите ФИО сотрудника и в каких планах отдела он(она) участвует</p>
+        </div>
+        <div class="fio-label">
+            <label class="fio-text">ФИО сотрудника</label>
+            <input type="text" class="fio-input">
+        </div>
+        <div class="be-in-plan-pos">
+            <label class="be-in-plan-text">Участие в плане отдела</label>
+            <input type="text" class="be-in-plan-input">
+        </div>
+        <div>
+            <button class="continue-button" onclick="AddUser()"> 
+                Подтвердить
+            </button>
+        </div>
+        <div>
+            <button class="back-button" onclick="BackFromDeleting()">
+                Назад
+            </button>
+        </div>
+    </div>
+    <div class="footer">
+        <p class="footer-text">Иванов Иван Иваныч</p>
+    </div>
+</body>
+</html>
